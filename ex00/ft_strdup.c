@@ -5,6 +5,7 @@ char	*ft_strdup(char *src)
 	char	*new_str;
 	int		strlen;
 	char	*letter_ptr;
+	char	*new_letter_ptr;
 
 	letter_ptr = src;
 	strlen = 0;
@@ -15,9 +16,11 @@ char	*ft_strdup(char *src)
 	}
 	new_str = malloc(sizeof(char) * strlen);
 	letter_ptr = src;
+	new_letter_ptr = new_str;
 	while (*letter_ptr)
 	{
-		*new_str = *letter_ptr;
+		*new_letter_ptr = *letter_ptr;
+		new_letter_ptr++;
 		letter_ptr++;
 	}
 	return (new_str);

@@ -14,7 +14,19 @@ void	test_empty(void)
 	assert(strcmp(str, result) == 0);
 }
 
+void	test_normal(void)
+{
+	char	*str;
+	char	*result;
+
+	str = "simon";
+	result = ft_strdup(str);
+	assert(result != str);
+	assert(strcmp(str, result) == 0);
+}
+
 int	main(void)
 {
 	test_empty();
+	test_normal();
 }
