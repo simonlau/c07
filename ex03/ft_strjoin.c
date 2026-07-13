@@ -6,7 +6,7 @@
 /*   By: simon.lau <simon.lau@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/13 10:29:08 by simon.lau         #+#    #+#             */
-/*   Updated: 2026/07/13 13:27:26 by simon.lau        ###   ########.fr       */
+/*   Updated: 2026/07/14 00:12:08 by simon.lau        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,8 +86,8 @@ char	*ft_strjoin(int size, char **str, char *sep)
 	int		total_size;
 	int		i;
 
-	total_size = calc_total_size(size, str, sep);
-	result = malloc(total_size * sizeof(char));
+	total_size = calc_total_size(size, str, sep) + 1;
+	result = malloc(total_size * sizeof(char *));
 	if (!result)
 	{
 		return (NULL);

@@ -10,6 +10,7 @@ void	test_empty(void)
 	char	*result;
 
 	result = ft_strjoin(0, NULL, NULL);
+	assert(result != NULL);
 	assert(0 == strcmp(result, ""));
 	free(result);
 }
@@ -20,6 +21,7 @@ void	test_simple(void)
 	char	*names[] = {"ab", "cd", "ef"};
 
 	result = ft_strjoin(3, names, "+-");
+	assert(result != NULL);
 	assert(0 == strcmp(result, "ab+-cd+-ef"));
 	free(result);
 }
@@ -30,6 +32,7 @@ void	test_one(void)
 	char	*names[] = {"X"};
 
 	result = ft_strjoin(1, names, NULL);
+	assert(result != NULL);
 	assert(0 == strcmp(result, "X"));
 	free(result);
 }
@@ -40,6 +43,7 @@ void	test_two(void)
 	char	*names[] = {"ab", "cd"};
 
 	result = ft_strjoin(2, names, "@");
+	assert(result != NULL);
 	assert(0 == strcmp(result, "ab@cd"));
 	free(result);
 }
