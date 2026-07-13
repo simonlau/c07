@@ -11,7 +11,8 @@ void	test_empty(void)
 	str = "";
 	result = ft_strdup(str);
 	assert(result != str);
-	assert(strcmp(str, result) == 0);
+	assert(result != NULL && str != NULL);
+	assert(result[0] == '\0');
 }
 
 void	test_normal(void)
@@ -22,6 +23,7 @@ void	test_normal(void)
 	str = "simon";
 	result = ft_strdup(str);
 	assert(result != str);
+	assert(result != NULL && str != NULL);
 	assert(strcmp(str, result) == 0);
 }
 
