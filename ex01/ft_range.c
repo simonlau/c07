@@ -6,7 +6,7 @@
 /*   By: simon.lau <simon.lau@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 16:48:01 by simon.lau         #+#    #+#             */
-/*   Updated: 2026/07/12 17:00:29 by simon.lau        ###   ########.fr       */
+/*   Updated: 2026/07/13 10:24:18 by simon.lau        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	*ft_range(int min, int max)
 	int	*result;
 	int	i;
 
-	if (max < min)
+	if (max <= min)
 	{
 		return (NULL);
 	}

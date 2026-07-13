@@ -27,22 +27,21 @@ void	test_small(void)
 	}
 }
 
-// void	test_same(void)
-// {
-// 	int	*result;
-// 	int	min;
-// 	int	max;
+void	test_same(void)
+{
+	int	*range;
+	int	min;
+	int	max;
 
-// 	min = 9;
-// 	max = min;
-// 	result = ft_range(min, max);
-// 	assert(NULL != result);
-// 	assert(result[0] == min);
-// }
+	min = 9;
+	max = min;
+	assert(0 == ft_ultimate_range(&range, min, max));
+	assert(NULL == range);
+}
 
 int	main(void)
 {
 	test_invalid();
 	test_small();
-	// test_same();
+	test_same();
 }

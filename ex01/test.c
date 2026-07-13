@@ -33,12 +33,12 @@ void	test_same(void)
 	min = 9;
 	max = min;
 	result = ft_range(min, max);
-	assert(NULL != result);
-	assert(result[0] == min);
+	assert(NULL == result);
 }
 
 int	main(void)
 {
 	test_invalid();
 	test_small();
+	test_same();
 }
