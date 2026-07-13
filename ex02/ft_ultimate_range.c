@@ -6,7 +6,7 @@
 /*   By: simon.lau <simon.lau@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 16:48:01 by simon.lau         #+#    #+#             */
-/*   Updated: 2026/07/12 17:07:11 by simon.lau        ###   ########.fr       */
+/*   Updated: 2026/07/13 10:15:42 by simon.lau        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 
 	if (max < min)
 	{
-		range = NULL;
+		*range = NULL;
 		return (0);
 	}
 	*range = malloc(sizeof(int));
@@ -29,7 +29,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	i = 0;
 	while (i < max - min)
 	{
-		*range[i] = min + i;
+		(*range)[i] = min + i;
 		i++;
 	}
 	return (max - min);
