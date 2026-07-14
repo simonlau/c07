@@ -48,10 +48,22 @@ void	test_two(void)
 	free(result);
 }
 
+void	test_some_empty(void)
+{
+	char	*result;
+	char	*names[] = {"ab", "", "ef"};
+
+	result = ft_strjoin(3, names, "+-");
+	assert(result != NULL);
+	assert(0 == strcmp(result, "ab+-+-ef"));
+	free(result);
+}
+
 int	main(void)
 {
 	test_empty();
 	test_simple();
 	test_one();
 	test_two();
+	test_some_empty();
 }
