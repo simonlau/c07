@@ -23,6 +23,7 @@ void	test_small(void)
 	{
 		assert(result[i] == min + i);
 	}
+	free(result);
 }
 
 void	test_same(void)
@@ -35,6 +36,7 @@ void	test_same(void)
 	max = min;
 	result = ft_range(min, max);
 	assert(NULL == result);
+	free(result);
 }
 
 void	test_medium_cross_negative(void)
@@ -51,6 +53,7 @@ void	test_medium_cross_negative(void)
 	{
 		assert(result[i] == min + i);
 	}
+	free(result);
 }
 
 void	test_large(void)
@@ -67,6 +70,7 @@ void	test_large(void)
 	{
 		assert(result[i] == min + i);
 	}
+	free(result);
 }
 
 int	main(void)

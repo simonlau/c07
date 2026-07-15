@@ -13,6 +13,7 @@ void	test_empty(void)
 	assert(result != str);
 	assert(result != NULL && str != NULL);
 	assert(result[0] == '\0');
+	free(result);
 }
 
 void	test_normal(void)
@@ -25,6 +26,7 @@ void	test_normal(void)
 	assert(result != str);
 	assert(result != NULL && str != NULL);
 	assert(strcmp(str, result) == 0);
+	free(result);
 }
 
 int	main(void)
