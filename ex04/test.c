@@ -14,7 +14,7 @@ void	test_binary_to_decimal(void)
 	base_from = "01";
 	base_to = "0123456789";
 	result = ft_convert_base(nbr, base_from, base_to);
-	assert(0 == strcmp("", result));
+	assert(0 == strcmp("5", result));
 }
 
 int	main(void)

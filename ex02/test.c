@@ -2,6 +2,7 @@
 #include <limits.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int		ft_ultimate_range(int **range, int min, int max);
 

@@ -1,6 +1,7 @@
 #include <assert.h>
 #include <limits.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 int		*ft_range(int min, int max);
 
